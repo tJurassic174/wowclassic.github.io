@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WoW Classic Guide</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<h1 align="center">Character Creation Guide</h1>
+	<div class="topnav">
+	  <a href="index.html">Home</a>
+	  <a class="active" href="charCreate.html">Character Create</a>
+	  <a href="leveling_guide.html">Leveling Guide</a>
+	  <a href="dungeon_guide.html">Dungeons</a>
+	  <a href="raid_guide.html">Raids</a>
+	</div>
+	<body>
+		<div class="jumbotron">
+		  <h1 class="display-4" align="center">Welcome to the Character Creation Guide</h1>
+		  <p class="lead">This guide will provide an in-depth guide from an introduction to each class to racial and class passives.</p>
+		  <hr class="my-4">
+		  <p>Below are links to the breakdown of each aspect of the guide.</p>
+		  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+		  <a href="#human_guide">Human Guide</a>
+		</div>
+		<div class="container"></div>
+		<p>Class and Race Guide</p>
+		<button class="collapsible">Human Guide</button>
+			<div class="content">
+				<div class="container">
+					<p style="font-size: 120%">Here is the basic information for the human race. Including playable classes and racials.</p>
+				</div>
+				<div>
+					<table>
+						<h3>Base Stats</h3>
+					  <tr>
+					    <th>Class</th>
+					    <th>Agility</th>
+					    <th>Intellect</th>
+					    <th>Spirit</th>
+					    <th>Stamia</th> 
+					    <th>Strength</th>
+					  </tr>
+					  <tr>
+					    <td>Warrior</td>
+					    <td>20</td>
+					    <td>20</td>
+					    <td>21</td>
+					    <td>22</td>
+					    <td>23</td>
+					  </tr>
+					  <tr>
+					    <td>Paladin</td>
+					    <td>20</td>
+					    <td>20</td>
+					    <td>22</td>
+					    <td>22</td>
+					    <td>22</td>
+					  </tr>
+					  <tr>
+					    <td>Rogue</td>
+					    <td>23</td>
+					    <td>20</td>
+					    <td>21</td>
+					    <td>21</td>
+					    <td>21</td>
+					  </tr>
+					  <tr>
+					  	<td>Mage</td>
+					  	<td>20</td>
+					  	<td>23</td>
+					  	<td>23</td>
+					  	<td>20</td>
+					  	<td>20</td>
+					  </tr>
+					  <tr>
+					  	<td>Warlock</td>
+					  	<td>20</td>
+					  	<td>22</td>
+					  	<td>23</td>
+					  	<td>21</td>
+					  	<td>20</td>
+					  </tr>
+					  <tr>
+					  	<td>Priest</td>
+					  	<td>20</td>
+					  	<td>22</td>
+					  	<td>24</td>
+					  	<td>20</td>
+					  	<td>20</td>
+					  </tr>
+					</table>
+				</div>
+			</div>
+		<button class="collapsible">Dwarf Guide</button>
+		<div class="content">
+		  <p>ahflkdajhfljkd</p>
+		</div>
+		<button class="collapsible">Gnome Guide</button>
+		<div class="content">
+		  <p>adsjflhadfa</p>
+		</div>
+		<button class="collapsible">Night Elf Guide</button>
+		<div class="content">
+		  <p>adsjflhadfa</p>
+		</div>
+
+
+
+		<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+		  coll[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var content = this.nextElementSibling;
+		    if (content.style.maxHeight){
+		      content.style.maxHeight = null;
+		    } else {
+		      content.style.maxHeight = content.scrollHeight + "px";
+		    } 
+		  });
+		}
+		</script>
+
+	</body>
+</html>
