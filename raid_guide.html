@@ -11,8 +11,43 @@
 	  <a href="leveling_guide.html">Leveling Guide</a>
 	  <a href="dungeon_guide.html">Dungeons</a>
 	  <a class="active" href="raid_guide.html">Raids</a>
+	  <a href="guild.html">Guild Members</a>
 	</div>
 	<body>
-		<label>This is a test</label>
+
+		<div class="jumbotron">
+		  <h1 class="display-4" align="center">Welcome to the Raid Guide</h1>
+		  <p class="lead">This guide will provide an in-depth guide to Classic WoW raiding. There will be a description of each raid, all encounters, requirements, and loot.</p>
+		  <hr class="my-4">
+		</div>
+
+		<label>This is a test</label><br><br><br>
+		<button class="collapsible">Human Guide</button>
+		<div class="content">
+			<div class="container">
+				<h4>Onyxiz's Lair</h4>
+				<p></p>
+			</div>
+		</div>
+
+
+
+
+		<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+		  coll[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var content = this.nextElementSibling;
+		    if (content.style.maxHeight){
+		      content.style.maxHeight = null;
+		    } else {
+		      content.style.maxHeight = content.scrollHeight + "px";
+		    } 
+		  });
+		}
+		</script>		
 	</body>
 </html>
