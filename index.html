@@ -4,7 +4,8 @@
 		<title>WoW Classic Guide</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
-	<div class="topnav">
+	<h1 align="center">Welcome to the Classic Guide</h1>
+	<div class="topnav" id="homepage_nav" hidden>
 	  <a class="active" href="index.html">Home</a>
 	  <a href="charCreate.html">Character Create</a>
 	  <a href="leveling_guide.html">Leveling Guide</a>
@@ -13,10 +14,12 @@
 	  <a href="guild.html">Guild Members</a>
 	</div>
 	<body>
-		<div class="container" align="center">
-			<h1>Welcome to the Classic Guide Boys</h1>
+		<button id="login_button" style="width:120px;height: 60px;" onclick="login()">Login</button>
+		<div class="container" id="homepage_body" align="center" hidden>
 			<br>
 			<p style="font-size: 120%">This guide will be covering the basics to our strategy of taking over Azeroth. <br><br>Use the Navigation Bar above for further instructions.</p>
 		</div>
+		<script type="text/javascript" src="myScript.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</body>
 </html>

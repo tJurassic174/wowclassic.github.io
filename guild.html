@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 	<head>
 		<title>WoW Classic Guide</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="myScript.js"></script>
 	</head>
 	<h1 align="center">Guild Member List</h1>
 	<div class="topnav">
@@ -14,6 +15,69 @@
 	  <a class="active" href="guild.html">Guild Members</a>
 	</div>
 	<body>
-
+		<p id="demo">a paragraph</p>
+		<button type="button" onclick="myFunction()">try me</button>
 	</body>
+
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p>JavaScript code blocks are written between { and }</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button><br>
+<button type="button" onclick="fullName()">name</button><br>
+<button type="button" onclick="joelsChars()"> Joel Snyder</button><br>
+
+<button onclick="document.getElementById('demo3').innerHTML=Date()">date</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="name"></p>
+<p id="joelsChars"></p>
+<p id="demo3"></p>
+
+<div class="container">
+  <h2>Basic Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+<script type="text/javascript" src="myScript.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
 </html>

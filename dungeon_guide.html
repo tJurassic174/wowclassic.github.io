@@ -3,6 +3,8 @@
 	<head>
 		<title>WoW Classic Guide</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<meta charset="utf-8">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<h1 align="center">Dungeon Guide</h1>
 	<div class="topnav">
@@ -33,7 +35,17 @@
 				<td>16-23</td>
 				<td>Westfall</td>
 				<td></td>
-				<td></td>
+				<td>
+					<button id="deadmines_btn">Encounters</button>
+					<div id="deadmines_modal" class="modal">
+						<div class="modal-content">
+   							<span class="close">&times;</span>
+							<h4>Notable Loot:</h4>
+							<p style="color: blue">Rares:<br> Smite's Mighty Hammer, Emberstone Staff, Cruel Barb, Blackened Defias Armour</p>
+							<p><strong>ROGUES</strong>: This instance drops the blackened defias set.</p>
+    					</div>
+					</div>
+				</td>
 			</tr>
 			<tr>
 				<td>Wailing Caverns</td>
@@ -61,7 +73,28 @@
 				<td>22-30</td>
 				<td>Stormwind</td>
 				<td></td>
-				<td></td>
+				<td>
+					<!-- Trigger the modal with a button -->
+  					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#stockade_modal">Encounters</button>
+
+  					<!-- Modal -->
+					<div class="modal fade" id="stockade_modal" role="dialog">
+	    				<div class="modal-dialog">
+	      				<!-- Modal content-->
+	      				<div class="modal-content">
+	        				<div class="modal-header">
+	          					<button type="button" class="close" data-dismiss="modal">&times;</button>
+	          					<h4 class="modal-title">The Stockade</h4>
+	        				</div>
+	        				<div class="modal-body">
+	          					<p>Notable Loot: <br>Iron Knuckles, Prison Shank, Defias Renegade Ring</p>
+	        				</div>
+	        				<div class="modal-footer">
+	          					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        				</div>
+	    				</div>
+  					</div>
+				</td>
 			</tr>
 			<tr>
 				<td>Gnomeregan</td>
@@ -185,4 +218,10 @@
 			
 		</table>
 	</body>
+
+
+	<script type="text/javascript" src="myScript.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 </html>
