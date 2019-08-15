@@ -39,8 +39,8 @@ window.onclick = function(event) {
 
 function login(){
   var userName = prompt("Please enter a username");
-  if (userName == "tim jiracek" || userName == "jim jiracek" || userName == "joel snyder" ||
-        userName == "ben olson" || userName == "austin rieper" || userName == "ryan mckay") {
+  if (userName == "Tim Jiracek" || userName == "Jim Jiracek" || userName == "Joel Snyder" ||
+        userName == "Ben Olson" || userName == "Austin Rieper" || userName == "Ryan Mckay") {
     alert("Welcome Champion");
     $('#homepage_body').removeAttr("hidden");
     $('#homepage_nav').removeAttr("hidden");
